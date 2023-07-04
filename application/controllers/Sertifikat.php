@@ -2,7 +2,7 @@
 
 defined('BASEPATH') or exit('No direct script access allowed');
 
-class Laporan extends CI_Controller
+class Sertifikat extends CI_Controller
 {
 
     public function __construct()
@@ -14,9 +14,9 @@ class Laporan extends CI_Controller
     public function index()
     {
         $data = [
-            'hasil_wp' => $this->Perhitungan_model->get_hasil_wp()
+            'hasil_wp' => $this->Perhitungan_model->get_hasil_limit()
         ];
 
-        $this->load->view('laporan', $data);
+        $this->load->view('sertifikat', $data);
     }
 }
