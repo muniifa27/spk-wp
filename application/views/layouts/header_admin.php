@@ -118,7 +118,7 @@
              <span>Data Hasil Akhir</span></a>
          </li>
 
-         <li class="nav-item <?php if ($page == 'Hasil') {
+         <li class="nav-item <?php if ($page == 'Hasil_limit') {
                                 echo 'active';
                               } ?>">
            <a class="nav-link" href="<?= base_url('Perhitungan/hasil_limit'); ?>">
